@@ -3,8 +3,8 @@ from groq import Groq
 
 
 app=Flask(__name__)
-client = Groq(api_key = "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")
-#Groq.api_key = "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"
+client = Groq(api_key = "")
+
 chat_history = []
 @app.route("/",methods=["GET", "POST"])
 def chat():
