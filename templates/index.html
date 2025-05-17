@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GPT Chat</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>GPT Chatbot 💬</h1>
+
+  <div class="chat-box">
+    {% for msg in chat_history %}
+      <div class="{{ msg.role }}">
+        <strong>{{ msg.role.capitalize() }}:</strong> {{ msg.content }}
+      </div>
+    {% endfor %}
+  </div>
+
+  <form method="POST">
+    <input type="text" name="user_input" required>
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
