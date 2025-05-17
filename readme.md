@@ -37,7 +37,7 @@ chat-with-groq/
 1. **Clone this repository**:
 
 ```bash
-git clone https://github.com/your-username/chat-with-groq.git
+git clone https://github.com/assassindiv/gpt_webchat
 cd chat-with-groq
 ```
 
